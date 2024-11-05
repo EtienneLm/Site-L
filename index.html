@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/carousel.css">
+    </link>
 </head>
+
 <body>
-    <h1>Hello World</h1>
+    <div class="carousel fade">
+        <div class="carousel_images">
+            <img src="images/img-1.png" alt="image1">
+            <img src="images/img-2.png" alt="image2">
+            <img src="images/img-3.png" alt="image3">
+        </div>
+
+        <button id="previous" class="change_img_btn" onclick="changeImage(1)">&#10094;</button>
+        <button id="next" class="change_img_btn" onclick="changeImage(-1)">&#10095;</button>
+    </div>
+
+    <script src="./js/carousel.js"></script>
+    
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="goToSlide(0)"></span>
+        <span class="dot" onclick="goToSlide(1)"></span>
+        <span class="dot" onclick="goToSlide(2)"></span>
+    </div>
 </body>
+
 </html>
