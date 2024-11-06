@@ -18,12 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
         updateCarousel();
     }
 
-    function goToSlide(index) {
-        currentIndex = index;
-        updateCarousel();
-        resetAutoSlide(); 
-    }
-
     function updateCarousel() {
         const offset = -currentIndex * 100;
         document.querySelector('.carousel_images').style.transform = `translateX(${offset}%)`;
@@ -36,11 +30,11 @@ document.addEventListener("DOMContentLoaded", function () {
         changeImage(1);
     }
 
-    let autoSlideInterval = setInterval(autoSlide, 5000);
+    let autoSlideInterval = setInterval(autoSlide, 3000);
 
     function resetAutoSlide() {
         clearInterval(autoSlideInterval);
-        autoSlideInterval = setInterval(autoSlide, 5000);
+        autoSlideInterval = setInterval(autoSlide, 3000);
     }
 
     document.getElementById('previous').addEventListener('click', () => {
