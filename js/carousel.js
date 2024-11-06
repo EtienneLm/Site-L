@@ -38,12 +38,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     document.getElementById('previous').addEventListener('click', () => {
-        changeImage(1); 
+        changeImage(-1); 
         resetAutoSlide();
     });
 
     document.getElementById('next').addEventListener('click', () => {
-        changeImage(-1);
+        changeImage(1);
         resetAutoSlide();
     });
 
