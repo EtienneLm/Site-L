@@ -1,0 +1,17 @@
+#pixelized_image {
+    max-width: 50rem;
+}
+
+.response_message {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.response_message.success {
+    color: green;
+}
+
+.response_message.error {
+    color: red;
+}

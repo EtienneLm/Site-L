@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
 
-    <link rel="stylesheet" type="text/css" href="./css/carousel.css">
-    </link>
+    <link rel="stylesheet" type="text/css" href="./css/carousel.css"></link>
+    <link rel="stylesheet" type="text/css" href="./css/pixalized.css"></link>
 </head>
 
 <body>
@@ -31,14 +31,34 @@
 
     <script src="./js/carousel.js"></script>
     <script src="./js/header.js"></script>
+    <script src="./js/pixalized.js"></script>
 
     <br>
 
     <div style="text-align:center">
-        <span class="dot" onclick="goToSlide(0)"></span>
-        <span class="dot" onclick="goToSlide(1)"></span>
-        <span class="dot" onclick="goToSlide(2)"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
     </div>
+
+    <br>
+    <br>
+    <p>---------------------------------------------------------------------------------------------------------------------</p>
+
+    <div class="pixelized_game_container">
+        <div>
+            <h2>Devine quelle est l'image pixélisée</h2>
+            <img id="pixelized_image" src="" alt="pixelized image">
+            <form action="">
+                <input id="pixalized_imput" type="text" placeholder="Ex: chat orange">
+                <button type="submit">Valider</button>
+            </form>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
 </body>
 
 </html>
