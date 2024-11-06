@@ -9,6 +9,7 @@ function changeImage(direction) {
     if (currentIndex >= totalImages) {
         currentIndex = 0;
     }
+
     if (currentIndex < 0) {
         currentIndex = totalImages - 1;
     }
@@ -19,7 +20,7 @@ function changeImage(direction) {
 function goToSlide(index) {
     currentIndex = index;
     updateCarousel();
-    resetAutoSlide();
+    resetAutoSlide(); 
 }
 
 function updateCarousel() {
@@ -34,9 +35,11 @@ function autoSlide() {
     changeImage(1);
 }
 
+let autoSlideInterval = setInterval(autoSlide, 5000);
+
 function resetAutoSlide() {
     clearInterval(autoSlideInterval);
-    autoSlideInterval = setInterval(autoSlide, 3000);
+    autoSlideInterval = setInterval(autoSlide, 5000);
 }
 
 document.getElementById('previous').addEventListener('click', () => {
@@ -45,7 +48,7 @@ document.getElementById('previous').addEventListener('click', () => {
 });
 
 document.getElementById('next').addEventListener('click', () => {
-    changeImage(-1); 
+    changeImage(-1);
     resetAutoSlide();
 });
 

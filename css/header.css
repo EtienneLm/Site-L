@@ -1,0 +1,60 @@
+header {
+    background-color: #333;
+    padding: 1rem;
+    color: white;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.autocomplete {
+    position: relative;
+    display: inline-block;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    max-width: 11rem;
+}
+
+.autocomplete-items div {
+    padding: 0.3rem;
+    max-width: 10rem;
+    cursor: pointer;
+    background-color: whitesmoke;
+    border-bottom: 1px solid #d4d4d4;
+    color: rgb(20, 20, 20);
+}
+
+.autocomplete-active {
+    background-color: #e9e9e9;
+}
+
+.form_response_txt {
+    color: rgb(212, 212, 212);
+    margin-top: 0.5rem;
+}
