@@ -30,11 +30,11 @@ document.addEventListener("DOMContentLoaded", function () {
         changeImage(1);
     }
 
-    let autoSlideInterval = setInterval(autoSlide, 3000);
+    let autoSlideInterval = setInterval(autoSlide, 5000);
 
     function resetAutoSlide() {
         clearInterval(autoSlideInterval);
-        autoSlideInterval = setInterval(autoSlide, 3000);
+        autoSlideInterval = setInterval(autoSlide, 5000);
     }
 
     document.getElementById('previous').addEventListener('click', () => {

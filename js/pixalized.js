@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const pixelizedList = [
         { src: "images/pixalized-images/pixalized-2.png", keywords: ["chat", "chat orange", "chat méchant"] },
         { src: "images/pixalized-images/pixalized-1.png", keywords: ["etienne", "beau", "tienou"] },
-        { src: "images/pixalized-images/pixalized-3.png", keywords: ["girafe", "grande giraffe", "giraffe dans la savane"] }
+        { src: "images/pixalized-images/pixalized-3.png", keywords: ["girafe", "grande giraffe", "girafe dans la savane"] }
     ];
 
     let selectedImage = selectRandomImage();
