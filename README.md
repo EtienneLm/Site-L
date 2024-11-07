@@ -1,7 +1,7 @@
 # Site-L
 
 to do :
-- add audio music in background
+- add audio music in background = done
    - the weeknd
    - luijipeka
 - add settings to choose music background

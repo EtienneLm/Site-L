@@ -6,27 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
 
-    <link rel="stylesheet" type="text/css" href="./css/carousel.css"></link>
-    <link rel="stylesheet" type="text/css" href="./css/heart.css"></link>
-    <link rel="stylesheet" type="text/css" href="./css/index.css"></link>
+    <link rel="stylesheet" type="text/css" href="./css/carousel.css">
+    </link>
+    <link rel="stylesheet" type="text/css" href="./css/heart.css">
+    </link>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    </link>
 
     <script src="./js/carousel.js" defer></script>
     <script src="./js/header.js" defer></script>
     <script src="./js/heart.js" defer></script>
+    <script src="./js/settings.js" defer></script>
 </head>
 
 <body>
+
+    <!-- <audio autoplay loop id="music_save_your_tears">
+        <source src="./music/save_your_tears.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        var audio = document.getElementById("music_save_your_tears");
+        audio.volume = 0.1;
+    </script> -->
+    <audio id="backgroundAudio" autoplay loop style="display: none;">
+        <source src="music/save_your_tears.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        var audio = document.getElementById("music_save_your_tears");
+        audio.volume = 0.1;
+    </script>
 
     <div id="header-placeholder"></div>
 
     <div>
         <div class="website_header">Joyeux 20ans !</div>
-    </div> 
+    </div>
 
     <div class="heart-container">
         <div id="main-heart">❤️</div>
         <div id="click_me_txt">click me</div>
-    </div>    
+    </div>
 
     <div class="carousel fade">
         <div class="carousel_images">
