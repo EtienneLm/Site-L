@@ -5,27 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./js/header.js" defer></script>
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="map.html">MAPPPPP</a></li>
-            </ul>
-        </nav>
 
-        <form autocomplete="off" onsubmit="handleFormSubmit(event)">
-            <div class="autocomplete" style="width:300px;">
-                <input id="myInput" type="text" name="myCountry" placeholder="Country">
+        <div class="logo_container">
+            <div>future logo</div>
+        </div>
+
+        <form class="form_container" autocomplete="off" onsubmit="handleFormSubmit(event)">
+            <div class="autocomplete">
+                <input id="myInput" type="text" name="myCountry" placeholder="Adjectif">
             </div>
-            <input type="submit" value="Search">
+            <button type="submit" class="submit_button">
+                <i class="fa fa-search"></i>
+            </button>
         </form>
 
         <div class="form_response_txt"></div>
-        
+
+        <nav class="nav_container">
+            <a class="nav_button" href="index.html">Accueil</a>
+            <a class="nav_button" href="map.html">MAPPPPP</a>
+        </nav>
 
     </header>
 </body>
+
 </html>

@@ -1,31 +1,67 @@
 header {
     background-color: #333;
-    padding: 1rem;
     color: white;
-}
-
-header nav ul {
-    list-style-type: none;
     display: flex;
-    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 98%;
 }
 
-header nav ul li {
-    display: inline;
+.logo_container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
 }
 
-header nav ul li a {
+.form_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.autocomplete input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 300px;
+    border: none;
+}
+
+.submit_button {
+    padding: 0.5rem;
+    /* background-color: #c70a0a; */
     color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: -1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 2.125rem; */
+    height: fit-content;
+}
+
+.submit_button i {
+    font-size: 1rem;
+}
+
+.nav_container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav_button {
+    color: #f0f0f0;
+    background-color: black;
     text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin-left: 15px;
+    border-radius: 25px;
 }
 
-header nav ul li a:hover {
-    text-decoration: underline;
-}
-
-.autocomplete {
-    position: relative;
-    display: inline-block;
+.nav_button:hover {
+    background-color: #444;
 }
 
 .autocomplete-items {
@@ -38,12 +74,12 @@ header nav ul li a:hover {
     left: 0;
     right: 0;
     background-color: white;
-    max-width: 11rem;
+    max-width: 300px;
 }
 
 .autocomplete-items div {
     padding: 0.3rem;
-    max-width: 10rem;
+    max-width: 300px;
     cursor: pointer;
     background-color: whitesmoke;
     border-bottom: 1px solid #d4d4d4;
