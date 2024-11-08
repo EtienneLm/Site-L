@@ -11,5 +11,3 @@ to do :
 Inspi front : 
 https://www.designrush.com/best-designs/websites/trends/best-modern-website-designs
 https://www.triumphpforte.at/
-
-
