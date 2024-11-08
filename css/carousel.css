@@ -1,15 +1,14 @@
-.website_header {
-    font-size: x-large;
-    font-weight: bold;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-style: italic;
-}
-
 .carousel {
     position: relative;
     max-width: 37.5rem;
     margin: auto;
     overflow: hidden;
+
+    /* margin-right: 14rem;
+    margin-top: 12rem; */
+
+    top: 8rem;
+    right: -14rem;
 }
 
 .carousel_images {
@@ -26,7 +25,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.356);
+    background-color: rgb(0 0 0 / 15%);
     color: white;
     border: none;
     padding: 10px;
@@ -60,4 +59,13 @@
 
 .active {
     background-color: #717171;
+}
+
+
+@media (max-width: 768px) {
+
+    .carousel {
+        top: 8rem;
+        right: -8rem;
+    }
 }
