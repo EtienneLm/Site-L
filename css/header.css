@@ -1,5 +1,6 @@
 header {
   /* background-color: none; -> changes dynamically in header.js */
+  font-family: Georgia;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -108,7 +109,7 @@ header {
 @media (max-width: 480px) {
   header {
     padding: 0.5rem;
-    height: 4rem;
+    height: 4.5rem;
     
   }
 

@@ -3,6 +3,7 @@
 */
 
 body {
+  font-family: Georgia;
 }
 
 .background-container {
@@ -43,7 +44,7 @@ body {
   font-size: xx-large;
   font-weight: bold;
   font-family: Georgia, serif;
-  font-style: italic;
+  /* font-style: italic; */
   color: white;
 }
 .website_top_txt.second {
