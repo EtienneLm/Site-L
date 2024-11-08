@@ -1,15 +1,14 @@
-.website_header {
-    font-size: x-large;
-    font-weight: bold;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-style: italic;
-}
-
 .carousel {
     position: relative;
     max-width: 37.5rem;
     margin: auto;
     overflow: hidden;
+
+    /* margin-right: 14rem;
+    margin-top: 12rem; */
+
+    top: 8rem;
+    right: -14rem;
 }
 
 .carousel_images {
