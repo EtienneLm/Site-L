@@ -25,7 +25,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.356);
+    background-color: rgb(0 0 0 / 15%);
     color: white;
     border: none;
     padding: 10px;
@@ -59,4 +59,13 @@
 
 .active {
     background-color: #717171;
+}
+
+
+@media (max-width: 768px) {
+
+    .carousel {
+        top: 8rem;
+        right: -8rem;
+    }
 }
