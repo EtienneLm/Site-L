@@ -1,22 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Attach the openSettingsPopup function to the settings button
-    const settingsButton = document.getElementById('settingsButton');
-    if (settingsButton) {
-        settingsButton.addEventListener('click', openSettingsPopup);
-    }
+    const audio = document.getElementById('backgroundAudio');
 
-    // Set volume slider to saved value or default
     const volumeControl = document.getElementById('volumeControl');
     if (volumeControl) {
         const savedVolume = localStorage.getItem('musicVolume') || 0.5;
         volumeControl.value = savedVolume;
-        
-        // Listen for volume slider changes and update audio volume
+        audio.volume = savedVolume;
+
         volumeControl.addEventListener('input', (e) => {
-            const audio = document.getElementById('backgroundAudio');
             const volume = e.target.value;
-            if (audio) audio.volume = volume;
+            audio.volume = volume;
+            localStorage.setItem('musicVolume', volume);
         });
+    }
+
+    const selectedMusic = localStorage.getItem('backgroundMusic') || 'music/save_your_tears.mp3';
+    audio.src = selectedMusic;
+
+    audio.play().catch((error) => {
+        console.warn("Automatic playback was prevented. User interaction may be required to start playback.");
+    });
+
+    const settingsButton = document.getElementById('settingsButton');
+    if (settingsButton) {
+        settingsButton.addEventListener('click', openSettingsPopup);
     }
 
     playSelectedMusic();
@@ -40,7 +47,6 @@ function saveSettings() {
     const selectedMusic = document.querySelector('input[name="music"]:checked').value;
     const volumeControl = document.getElementById('volumeControl');
 
-    // Save music selection and volume to local storage
     localStorage.setItem('backgroundMusic', selectedMusic);
     if (volumeControl) {
         localStorage.setItem('musicVolume', volumeControl.value);
@@ -52,19 +58,19 @@ function saveSettings() {
 
 function playSelectedMusic() {
     const audio = document.getElementById('backgroundAudio');
-    const selectedMusic = localStorage.getItem('backgroundMusic');
+    const selectedMusic = localStorage.getItem('backgroundMusic') || 'music/save_your_tears.mp3';
     const savedVolume = localStorage.getItem('musicVolume') || 0.5;
 
     if (audio) {
         if (selectedMusic === "") {
-            // If "No music" is selected, stop and clear the audio
             audio.pause();
             audio.src = "";
         } else {
-            // Otherwise, set the selected music and volume
             audio.src = selectedMusic;
             audio.volume = savedVolume;
-            audio.play();
+            audio.play().catch((error) => {
+                console.warn("Automatic playback was prevented. User interaction may be required to start playback.");
+            });
         }
     }
 }
