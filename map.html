@@ -8,14 +8,21 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
   <link rel="stylesheet" href="./css/map.css">
   <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/index.css" />
 
   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
   <script src="./js/map.js" defer></script>
   <script src="./js/header.js"></script>
+  <script src="./js/settings.js" defer></script>
 </head>
 
 <body>
-
+  <div class="background-container"></div>
+  
+  <audio id="backgroundAudio" loop autoplay style="display: none">
+    <source src="music/save_your_tears.mp3" type="audio/mp3" />
+  </audio>
+  
   <div id="header-placeholder"></div>
   <br>
   <br>
