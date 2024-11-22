@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
     const pixalizedImgList = [
         { id: 1, src: "./images/pixalized-images/pixalized/pix-1.png", keywords: ["etienne et louane", "couché de soleil", "santorin"] },
-        { id: 2, src: "../images/pixalized-images/pixalized-1.png", keywords: ["etienne", "beau", "tienou"] },
-        { id: 3, src: "images/pixalized-images/pixalized-3.png", keywords: ["girafe", "grande giraffe", "girafe dans la savane"] }
+        { id: 2, src: "./images/pixalized-images/pixalized-1.png", keywords: ["etienne", "beau", "tienou"] },
+        { id: 3, src: "./images/pixalized-images/pixalized-3.png", keywords: ["girafe", "grande giraffe", "girafe dans la savane"] }
     ];
 
     const normalImgList = [
         { id: 1, src: "./images/pixalized-images/real/real-1.png" },
-        { id: 2, src: "../images/pixalized-images/pixalized-1.png" },
-        { id: 3, src: "images/pixalized-images/pixalized-3.png" }
+        { id: 2, src: "./images/pixalized-images/pixalized-1.png" },
+        { id: 3, src: "./images/pixalized-images/pixalized-3.png" }
     ];
 
     let lastImage = null;
