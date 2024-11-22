@@ -3,6 +3,11 @@
 */
 
 body {
+  font-family: var(--font-georgia); 
+}
+
+input {
+  font-family: var(--font-georgia); 
 }
 
 .background-container {
@@ -42,7 +47,6 @@ body {
 .website_top_txt {
   font-size: xx-large;
   font-weight: bold;
-  font-family: Georgia, serif;
   font-style: italic;
   color: white;
 }

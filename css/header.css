@@ -10,6 +10,9 @@ header {
   top: 0;
   left: 0;
   flex-wrap: wrap;
+
+  font-family: var(--font-georgia); 
+
 }
 
 .logo_container {
@@ -54,7 +57,7 @@ header {
   height: 2.5px;
   bottom: 0;
   left: 0;
-  background-color: #4e754b;
+  background-color: var(--bg-green);;
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
