@@ -1,5 +1,4 @@
 header {
-  /* background-color: none; -> changes dynamically in header.js */
   color: white;
   display: flex;
   justify-content: space-between;
@@ -13,17 +12,16 @@ header {
   flex-wrap: wrap;
 }
 
-.logo_link {
-  text-decoration: none;
-  color: white;
-}
-
 .logo_container {
   flex: 1;
   display: flex;
   justify-content: flex-start;
-  padding: 0.5rem 1rem;
+  /* padding: 0.5rem 1rem; */
   margin-left: 5rem;
+}
+
+.logo_link {
+  max-width: 10rem;
 }
 
 /* Navigation buttons */

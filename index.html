@@ -12,11 +12,14 @@
     </link>
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     </link>
+    <link rel="stylesheet" type="text/css" href="./css/pixalized.css">
+    </link>
 
     <script src="./js/carousel.js" defer></script>
     <script src="./js/header.js" defer></script>
     <script src="./js/heart.js" defer></script>
     <script src="./js/settings.js" defer></script>
+    <script src="./js/pixalized.js" defer></script>
 </head>
 
 <body>
@@ -43,8 +46,8 @@
         <div class="carousel fade">
             <div class="carousel_images">
                 <img src="images/img-1.png" alt="image1">
-                <img src="images/img-2.png" alt="image2">
-                <img src="images/img-3.png" alt="image3">
+                <img src="images/carousel-img/img-2.png" alt="image2">
+                <img src="images\carousel-img\img-3.png" alt="image3">
                 <!-- <img src="images/img-4.png" alt="image4">
             <img src="images/img-5.png" alt="image5">
             <img src="images/img-6.png" alt="image6">
@@ -68,9 +71,14 @@
 
         <br><br><br><br><br><br><br><br><br><br>
         <hr>
-        <div class="pixalized_game_section">
-            <iframe src="pixalized.html" width="100%" height="600px" frameborder="0" title="Pixalized Game"></iframe>
+        <div class="pixalized_game_container">
+            <img id="pixalized_image" alt="Pixelated Image">
+            <form>
+                <input type="text" id="pixalized_input" placeholder="Écris un mot clé">
+                <button type="submit">T'es sûr ?</button>
+            </form>
         </div>
+        
 
         <br><br>
 
