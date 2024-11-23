@@ -1,14 +1,30 @@
 document.addEventListener("DOMContentLoaded", () => {
     const pixalizedImgList = [
-        { id: 1, src: "./images/pixalized-images/pixalized/pix-1.png", keywords: ["etienne et louane", "couché de soleil", "santorin"] },
-        { id: 2, src: "./images/pixalized-images/pixalized-1.png", keywords: ["etienne", "beau", "tienou"] },
-        { id: 3, src: "./images/pixalized-images/pixalized-3.png", keywords: ["girafe", "grande giraffe", "girafe dans la savane"] }
+        { id: 1, src: "./images/pixalized/pix-1.png", keywords: ["plage", "bouteille", "allongé"] },
+        { id: 2, src: "./images/pixalized/pix-2.png", keywords: ["masque", "lycée", "début"] },
+        { id: 3, src: "./images/pixalized/pix-3.png", keywords: ["masque", "collier", "coeur", "lego", "lycée"] },
+        { id: 4, src: "./images/pixalized/pix-4.png", keywords: ["lola", "soirée", "sac à dos"] },
+        { id: 5, src: "./images/pixalized/pix-5.png", keywords: ["disney", "lunettes", "3d"] },
+        { id: 6, src: "./images/pixalized/pix-6.png", keywords: ["etienne et louane", "couché de soleil", "santorin"] },
+        { id: 7, src: "./images/pixalized/pix-7.png", keywords: ["etienne et louane", "couché de soleil", "santorin"] },
+        { id: 8, src: "./images/pixalized/pix-8.png", keywords: ["etienne et louane", "couché de soleil", "santorin"] },
+        { id: 9, src: "./images/pixalized/pix-9.png", keywords: ["etienne et louane", "couché de soleil", "santorin"] },
+        { id: 10, src: "./images/pixalized/pix-10.png", keywords: ["etienne et louane", "couché de soleil", "santorin"] },
+        { id: 11, src: "./images/pixalized/pix-11.png", keywords: ["etienne et louane", "couché de soleil", "santorin"] }
     ];
 
     const normalImgList = [
-        { id: 1, src: "./images/pixalized-images/real/real-1.png" },
-        { id: 2, src: "./images/pixalized-images/pixalized-1.png" },
-        { id: 3, src: "./images/pixalized-images/pixalized-3.png" }
+        { id: 1, src: "./images/normal/normal-1.jpg" },
+        { id: 2, src: "./images/normal/normal-2.jpg" },
+        { id: 3, src: "./images/normal/normal-3.jpg" },
+        { id: 4, src: "./images/normal/normal-4.jpg" },
+        { id: 5, src: "./images/normal/normal-5.jpg" },
+        { id: 6, src: "./images/normal/normal-6.jpg" },
+        { id: 7, src: "./images/normal/normal-7.jpg" },
+        { id: 8, src: "./images/normal/normal-8.jpg" },
+        { id: 9, src: "./images/normal/normal-9.jpg" },
+        { id: 10, src: "./images/normal/normal-10.jpg" },
+        { id: 11, src: "./images/normal/normal-11.png" }
     ];
 
     let lastImage = null;
