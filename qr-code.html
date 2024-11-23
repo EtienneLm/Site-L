@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qr code page</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <link rel="stylesheet" href="./css/qr-code.css">
+    <script src="./js/header.js" defer></script>
+    <script src="./js/settings.js" defer></script>
+</head>
+
+<body>
+    <div class="background-container"></div>
+    <audio id="backgroundAudio" loop autoplay style="display: none;">
+        <source src="music/save_your_tears.mp3" type="audio/mp3">
+    </audio>
+    <div id="header-placeholder"></div>
+
+    <div class="qrcode_page_content">
+        <div class="qrcode"></div>
+    </div>
+
+    <div id="footer"></div>
+    <script src="./js/footer.js" defer></script>
+</body>
+
+</html>

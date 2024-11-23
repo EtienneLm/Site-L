@@ -6,3 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch((error) => console.error("Error loading footer:", error));
 });
+
+const qrcode = new QRCode(document.querySelector(".qrcode"));
+qrcode.makeCode("https://etiennelm.github.io/Site-L/");

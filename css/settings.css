@@ -71,6 +71,12 @@ button {
     cursor: pointer;
 }
 
+p {
+    font-family: var(--font-georgia); 
+    text-decoration: none;
+    color: white;
+}
+
 button:hover {
     background-color: var(--bg-green-hovered);
 }
