@@ -1,16 +1,17 @@
 # Site-L
-Lien : https://etiennelm.github.io/Site-L/  
+**Link :** https://etiennelm.github.io/Site-L/  
 
-to do :
-- add actual images
-- add logo to header (fée clochette avec tête de Louane)
-- use font Georgia
+### Front ideas : 
+ - *https://www.designrush.com/best-designs/websites/trends/best-modern-website-designs*  
+ - *https://www.triumphpforte.at/*
 
-Inspi front : 
-https://www.designrush.com/best-designs/websites/trends/best-modern-website-designs
-https://www.triumphpforte.at/
-
-
-### FIX :
- - main page background image does not appear on github
- - Responsive design not functionnal on github but it is in F12
+### To do :
+1. **Pixalized :** 
+   - fix images pixalized images links (github)
+   - Add key words list
+2. **Map :**
+   - Add popup images corresponding to the pinned place
+3. **Carousel :**
+   - Add more images  
+4. **Responsive :**
+    - Responsive design not functionnal on github but it is in F12
