@@ -6,10 +6,15 @@
  - *https://www.triumphpforte.at/*
 
 ### To do :
-##### FIRST : 
+##### How to compress : 
 1. Compress images: https://tinypng.com/  
 2.  Resize them to the max size needed : https://squoosh.app (Carousel : 600/450)  
 3. **Compress them with moss JPEG** 
+
+4. **Compress**:
+   - pixalized imagses (513/682)
+   - normal images
+   - music files (actual: 5mb)
 
 --- 
 1. **Pixalized :** 
