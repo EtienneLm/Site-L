@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
             imageElement.src = randomImage.src;
             imageElement.setAttribute("data-id", randomImage.id);
             imageElement.setAttribute("data-keywords", JSON.stringify(randomImage.keywords));
-            imageElement.setAttribute("loading", "lazy"); // should allow the image to be loaded only when the user scrolls to the game
+            // imageElement.setAttribute("loading", "lazy"); // should allow the image to be loaded only when the user scrolls to the game
         }
 
         return randomImage;
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const imgElement = document.createElement("img");
             imgElement.src = normalImage.src;
             imgElement.alt = "Non-pixalized image";
-            imgElement.setAttribute("loading", "lazy");
+            // imgElement.setAttribute("loading", "lazy");
 
             const closeButton = document.createElement("button");
             closeButton.textContent = "Close";
