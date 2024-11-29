@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
         { id: 6, src: "./images/normal/normal-6.jpg" },
         { id: 7, src: "./images/normal/normal-7.jpg" },
         { id: 8, src: "./images/normal/normal-8.jpg" },
-        { id: 9, src: "./images/normal/normal-9.jpg" },
-        { id: 10, src: "./images/normal/normal-10.jpg" },
+        { id: 9, src: "./images/normal/normal-9.JPG" },
+        { id: 10, src: "./images/normal/normal-10.JPG" },
         { id: 11, src: "./images/normal/normal-11.png" }
     ];
 
