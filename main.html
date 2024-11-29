@@ -14,6 +14,11 @@
     </link>
     <link rel="stylesheet" type="text/css" href="./css/pixalized.css">
     </link>
+    <link rel="stylesheet" type="text/css" href="./css/secret.css">
+    </link>
+
+    <link rel="stylesheet" type="text/css" href="./css/settings.css">
+    </link>
 
     <script src="./js/carousel.js" defer></script>
     <script src="./js/header.js" defer></script>
@@ -88,6 +93,19 @@
     </div>
 
     <br><br><br><br><br><br>
+
+    <div class="secret_link_container" id="secret_link_container">
+        <a class="secret_link" href="#" onclick="openSecretPopup()">Clique ici</a>
+    </div>
+    <div id="secret_popup" class="popup">
+        <div class="popup-content">
+            <p class="test_txt">Hello</p>
+            <button class="close-btn" onclick="closeSecretPopup()">X</button>
+        </div>
+    </div>
+
+    <script src="./js/secret.js" defer></script>
+    
 
     <div id="footer"></div>
     <script src="./js/footer.js" defer></script>
