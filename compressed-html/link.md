@@ -1,0 +1,1 @@
+https://kangax.github.io/html-minifier/
