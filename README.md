@@ -8,7 +8,7 @@
 ### To do :
 ##### How to compress : 
 1. Compress images: https://tinypng.com/  
-2.  Resize them to the max size needed : https://squoosh.app (Carousel : 600/450)  
+2. Resize them to the max size needed : https://squoosh.app (Carousel : 600/450)  
 3. **Compress them with moss JPEG** 
 
 4. **Compress**:
@@ -28,5 +28,7 @@
 4. **Responsive :**
    - Responsive design not functionnal on github but it is in F12
 
-5. **Optimise :**  
+5. **Optimise :**
+   - recompress images with WEBP
+   - compress musics
    ![image](https://github.com/user-attachments/assets/94a17982-b0e4-4a27-ac75-7ce7269faa99)
