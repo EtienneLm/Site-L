@@ -22,6 +22,7 @@
    - Add key words list
 2. **Map :**
    - Add popup images corresponding to the pinned place
+   - add "loading="lazy"" to the images
 3. **Carousel :**
    - Add more images  
 4. **Responsive :**
