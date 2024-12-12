@@ -1,6 +1,7 @@
 .carousel {
     position: relative;
-    max-width: 42.125;
+/*     max-width: 42.125; */
+    max-width: 37.5;
     margin: auto;
     overflow: hidden;
 
