@@ -26,4 +26,7 @@
 3. **Carousel :**
    - Add more images  
 4. **Responsive :**
-    - Responsive design not functionnal on github but it is in F12
+   - Responsive design not functionnal on github but it is in F12
+
+5. **Optimise :**  
+   ![image](https://github.com/user-attachments/assets/94a17982-b0e4-4a27-ac75-7ce7269faa99)
