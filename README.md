@@ -7,7 +7,7 @@
 
 ### To do :
 ##### How to compress : 
-1. Compress images: https://tinypng.com/  
+1. Compress images: https://tinypng.com/   ///// https://www.resizepixel.com/download
 2. Resize them to the max size needed : https://squoosh.app (Carousel : 600/450)  
 3. **Compress them with moss JPEG** 
 
