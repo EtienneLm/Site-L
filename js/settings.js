@@ -56,9 +56,11 @@ function saveSettings() {
     closeSettingsPopup();
 }
 
+
 function playSelectedMusic() {
     const audio = document.getElementById('backgroundAudio');
     const selectedMusic = localStorage.getItem('backgroundMusic') || 'music/save_your_tears.mp3';
+
     const savedVolume = localStorage.getItem('musicVolume') || 0.5;
 
     if (audio) {
@@ -74,3 +76,4 @@ function playSelectedMusic() {
         }
     }
 }
+
