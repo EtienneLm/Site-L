@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const audio = document.getElementById('backgroundAudio');
-    const volumeControl = document.getElementById('volumeControl');
 
-    // Set the volume control
+    const volumeControl = document.getElementById('volumeControl');
     if (volumeControl) {
         const savedVolume = localStorage.getItem('musicVolume') || 0.5;
         volumeControl.value = savedVolume;
@@ -15,13 +14,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Play the selected music or stop if "No music" is chosen
-    playSelectedMusic();
+    const selectedMusic = localStorage.getItem('backgroundMusic') || 'music/save_your_tears.mp3';
+    audio.src = selectedMusic;
+
+    audio.play().catch((error) => {
+        console.warn("Automatic playback was prevented. User interaction may be required to start playback.");
+    });
 
     const settingsButton = document.getElementById('settingsButton');
     if (settingsButton) {
         settingsButton.addEventListener('click', openSettingsPopup);
     }
+
+    playSelectedMusic();
 });
 
 function openSettingsPopup() {
@@ -47,24 +52,20 @@ function saveSettings() {
         localStorage.setItem('musicVolume', volumeControl.value);
     }
 
-    // Apply the selected music and close the popup
     playSelectedMusic();
     closeSettingsPopup();
 }
 
 function playSelectedMusic() {
     const audio = document.getElementById('backgroundAudio');
-    const selectedMusic = localStorage.getItem('backgroundMusic') || ''; // Default to empty string for "No music"
-
+    const selectedMusic = localStorage.getItem('backgroundMusic') || 'music/save_your_tears.mp3';
     const savedVolume = localStorage.getItem('musicVolume') || 0.5;
 
     if (audio) {
         if (selectedMusic === "") {
-            // Stop music if "No music" is selected
             audio.pause();
             audio.src = "";
         } else {
-            // Play selected music
             audio.src = selectedMusic;
             audio.volume = savedVolume;
             audio.play().catch((error) => {
