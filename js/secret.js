@@ -13,7 +13,7 @@ function openSecretPopup() {
     }
 }
 
-function closeSettingsPopup() {
+function closeSecretPopup() {
     const popup = document.getElementById('secret_popup');
     if (popup) {
         popup.style.display = 'none';
