@@ -2,6 +2,9 @@ body,
 html {
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
     font-family: var(--font-georgia);
 }
 
@@ -34,12 +37,13 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 4rem;
 }
 
 #footer_logo {
     display: flex;
     align-items: center;
-    margin-left: 4rem;
+    /* margin-left: 4rem; */
 }
 
 #footer_logo img {
@@ -52,6 +56,7 @@ footer {
     flex-grow: 1;
     text-align: center;
     font-size: 1rem;
+    margin: 0;
 }
 
 .qrcode_link {
@@ -67,23 +72,31 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+
     footer {
-        flex-direction: column;
+        flex-direction: row;
         height: auto;
-        padding: 0.5rem 1rem;
+        padding: 1rem 0; 
+        width: 100%;
     }
 
     .footer_container {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        gap: 0.5rem; 
+        gap: 1rem; 
+        width: 100%;
     }
 
     #footer_logo {
-        margin-left: 0;
+        margin: 0; 
+    }
+
+    .footer_text {
+        width: 100%; 
+        text-align: center;
     }
 
     .qrcode_link {
-        margin-right: 0;
+        margin: 0; 
     }
 }
