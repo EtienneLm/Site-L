@@ -14,13 +14,19 @@ const locations = [
   { name: "Rome", coords: [41.9028, 12.4964], type: "pin-question" },
   { name: "Venise", coords: [45.4408, 12.3155], type: "pin-question" },
   { name: "Canada", coords: [56.1304, -106.3468], type: "pin-question" },
-  { name: "Switzerland", coords: [46.8182, 8.2275], type: "pin-question" },
+  { name: "Switzerland", coords: [46.8182, 8.2275], type: "pin-question" }
 ];
 
 const locationImages = {
-  Paris: "../images/popup-images/popup-1.png",
-  Venise: "../images/img-3.png",
-  Canada: "../images/img-2.png",
+  Santorini: "./images/map-popup/popup-3.jpg",
+  Normandie: "./images/map-popup/popup-4.jpg",
+  Paris: "./images/map-popup/popup-2.jpg",
+  Seville: "./images/map-popup/popup-5.jpg",
+  Rodez: "./images/map-popup/popup-6.jpg",
+  Rome: "./images/map-popup/popup-7.jpg",
+  Venise: "./images/map-popup/popup-8.jpg",
+  Canada: "./images/map-popup/popup-9.jpg",
+  Switzerland: "./images/map-popup/popup-10.jpg"
 };
 
 locations.forEach((location) => {
@@ -55,3 +61,23 @@ function closePopup() {
   const popup = document.getElementById("image-popup");
   popup.style.display = "none";
 }
+
+// Add a legend to the map
+const legend = L.control({ position: "bottomright" });
+
+legend.onAdd = function () {
+  const div = L.DomUtil.create("div", "legend");
+  div.innerHTML = `
+    <div class="legend-item">
+      <div class="icon trophy"></div>
+      <span>Déjà fait</span>
+    </div>
+    <div class="legend-item">
+      <div class="icon pin-question"></div>
+      <span>Veux-tu y aller ?</span>
+    </div>
+  `;
+  return div;
+};
+
+legend.addTo(map);
