@@ -1,0 +1,136 @@
+.pixalized_game_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    max-width: 600px;
+    margin: auto;
+    font-family: var(--font-georgia); 
+}
+
+#pixalized_image {
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+.pixalized_form {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+#pixalized_input {
+    flex: 1;
+    padding: 0rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+}
+
+button[type="submit"] {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background-color: var(--bg-green);;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--bg-green-hovered);
+}
+
+.response_message {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.response_message.success {
+    background-color: #28a745;
+    color: white;
+}
+
+.response_message.error {
+    background-color: #dc3545;
+    color: white;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(146, 144, 144, 0.877);
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.modal img {
+    max-width: 100%;
+    max-height: 80vh;
+}
+
+.close-button {
+    margin-top: 10px;
+    padding: 0.5rem 1rem;
+    background-color: var(--bg-green);;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background-color: var(--bg-green-hovered);
+}
+
+/* Submit btn animation  */
+
+.pixalized_submit {
+    position: relative;
+    width: 9rem;
+    height: 3rem;
+    background: transparent;
+    border: 1px solid #91C9FF;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 1.5s ease-in-out;
+    padding: 0;
+}
+
+.pixalized_submit:hover {
+    background: #4F95DA;
+}
+
+.pixalized_submit svg {
+    position: absolute;
+    /* left: 0;
+    top: 0; */
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: stroke-dashoffset 1s ease-in-out;
+    height: 3rem;
+}
+
+.pixalized_submit:hover svg {
+    stroke-dashoffset: -480;
+}
+
+.pixalized_submit span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+    z-index: 1;
+}
