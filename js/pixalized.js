@@ -1,16 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
     const pixalizedImgList = [
-        { id: 1, src: "./images/pixalized/pix-1.png", keywords: ["plage", "bouteille", "allongé"] },
-        { id: 2, src: "./images/pixalized/pix-2.png", keywords: ["masque", "lycée", "début"] },
+        { id: 1, src: "./images/pixalized/pix-1.png", keywords: ["plage", "bouteille", "allongé", "bob"] },
+        { id: 2, src: "./images/pixalized/pix-2.png", keywords: ["masque", "lycée", "début", "cheuveux cours", "préheau"] },
         { id: 3, src: "./images/pixalized/pix-3.png", keywords: ["masque", "collier", "coeur", "lego", "lycée"] },
-        { id: 4, src: "./images/pixalized/pix-4.png", keywords: ["lola", "soirée", "sac à dos"] },
-        { id: 5, src: "./images/pixalized/pix-5.png", keywords: ["disney", "lunettes", "3d"] },
+        { id: 4, src: "./images/pixalized/pix-4.png", keywords: ["lola", "soirée", "sac à dos", "nuit", "rouge", "theme", "jogging"] },
+        { id: 5, src: "./images/pixalized/pix-5.png", keywords: ["disney", "lunettes", "3d", "star wars", "bob"] },
         // { id: 6, src: "./images/pixalized/pix-6.png", keywords: ["etienne et louane", "couché de soleil", "santorin"] },
-        { id: 7, src: "./images/pixalized/pix-7.png", keywords: ["etienne et louane", "couché de soleil", "santorin"] },
-        { id: 8, src: "./images/pixalized/pix-8.png", keywords: ["etienne et louane", "couché de soleil", "santorin"] },
-        { id: 9, src: "./images/pixalized/pix-9.png", keywords: ["etienne et louane", "couché de soleil", "santorin"] },
-        { id: 10, src: "./images/pixalized/pix-10.png", keywords: ["etienne et louane", "couché de soleil", "santorin"] },
-        { id: 11, src: "./images/pixalized/pix-11.png", keywords: ["etienne et louane", "couché de soleil", "santorin"] }
+        { id: 7, src: "./images/pixalized/pix-7.png", keywords: ["boule de noël", "boule de noel", "sapin", "photo", "boule de décoration" ] },
+        { id: 8, src: "./images/pixalized/pix-8.png", keywords: ["soirée", "soirée clarisse", "clarisse", "theme", "île", "ballons", "robe", "maillot de bain", "chemise"] },
+        { id: 9, src: "./images/pixalized/pix-9.png", keywords: ["paris", "miroir", "bob", "lego store", "appareil photo", "week-end"] },
+        { id: 10, src: "./images/pixalized/pix-10.png", keywords: ["soirée", "anniversaire", "20 ans", "20ans", "etienne", "gabin et etienne", "calin", "ballons"] },
+        { id: 11, src: "./images/pixalized/pix-11.png", keywords: ["etienne et louane", "couché de soleil", "santorin", "américaine", "photo", "post instagram", "lumière"] }
     ];
 
     const normalImgList = [
