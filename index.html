@@ -4,87 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main page</title>
 
-    <link rel="stylesheet" type="text/css" href="./css/carousel.css">
+    <link rel="stylesheet" type="text/css" href="./css/countdown.css">
     </link>
-    <link rel="stylesheet" type="text/css" href="./css/heart.css">
-    </link>
-    <link rel="stylesheet" type="text/css" href="./css/index.css">
-    </link>
-    <link rel="stylesheet" type="text/css" href="./css/pixalized.css">
-    </link>
+    <script src="./js/countdown.js" defer></script>
 
-    <script src="./js/carousel.js" defer></script>
-    <script src="./js/header.js" defer></script>
-    <script src="./js/heart.js" defer></script>
-    <script src="./js/settings.js" defer></script>
-    <script src="./js/pixalized.js" defer></script>
+    <title>Il faut être plus patient</title>
 </head>
 
 <body>
-    <div class="background-container"></div>
 
-    <audio id="backgroundAudio" loop autoplay style="display: none;">
-        <source src="music/save_your_tears.mp3" type="audio/mp3">
-    </audio>
+    <p id="countdown_date"></p>
 
-    <div id="header-placeholder"></div>
-
-    <div class="main_content">
-
-        <div class="website_top_container">
-            <div class="website_top_txt">Bienvenue Loulou</div>
-            <div class="website_top_txt second">Joyeux 20 ans !</div>
-        </div>
-
-        <!-- <div class="heart-container">
-        <div id="main-heart">❤️</div>
-        <div id="click_me_txt">click me</div>
-    </div> -->
-
-        <div class="carousel fade">
-            <div class="carousel_images">
-                <img src="./images/carousel/car-1.JPG" alt="image1">
-                <img src="./images/carousel/car-2.jpg" alt="image2">
-                <img src="./images/carousel/car-3.png" alt="image3">
-                <!-- <img src="images/img-4.png" alt="image4">
-        <img src="images/img-5.png" alt="image5">
-        <img src="images/img-6.png" alt="image6">
-        <img src="images/img-7.png" alt="image7">
-        <img src="images/img-8.png" alt="image8">
-        <img src="images/img-9.png" alt="image9">
-        <img src="images/img-10.png" alt="image10"> -->
-            </div>
-
-            <button id="previous" class="change_img_btn" onclick="changeImage(1)">&#10094;</button>
-            <button id="next" class="change_img_btn" onclick="changeImage(-1)">&#10095;</button>
-
-            <br>
-
-            <div style="text-align:center">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-        </div>
-
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <!-- <hr> -->
-        <div class="pixalized_game_container">
-            <img id="pixalized_image" alt="Pixelated Image">
-            <form class="pixalized_form">
-                <input type="text" id="pixalized_input" placeholder="Écris un mot clé">
-                <button type="submit">T'es sûr ?</button>
-            </form>
-        </div>
-
+    <div class="button-container">
+        <button id="appearing_btn" class="appearing_btn" style="display: none;">
+            <a href="main.html" class="appearing_btn_link">Click Me</a>
+        </button>
     </div>
 
-    <br><br><br><br><br><br>
-
-    <div id="footer"></div>
-    <script src="./js/footer.js" defer></script>
 
 </body>
 

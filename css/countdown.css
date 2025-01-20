@@ -1,0 +1,45 @@
+body {
+    font-family: var(--font-georgia);
+}
+
+:root {
+    --bg-green: #4e754b; /* var(--bg-green); */ 
+    --bg-green-hovered: #3b5e39; /* var(--bg-green-hovered); */ 
+    --test-pink: pink;
+
+    --font-georgia: Georgia, serif; /* var(--font-georgia); */
+}
+
+p {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 5rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 10rem;
+}
+
+.appearing_btn {
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    
+    background-color: var(--bg-green);
+    border: none; 
+}
+
+.appearing_btn:hover {
+    background-color: var(--bg-green-hovered);
+}
+
+.appearing_btn_link {
+    text-decoration: none;
+    color: white; 
+    display: block;
+    padding: 10px 20px; 
+    text-align: center; 
+}

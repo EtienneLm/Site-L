@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+
+    <link rel="icon" type="image/x-icon" href="./images/logo/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="./css/carousel.css">
+    </link>
+    <link rel="stylesheet" type="text/css" href="./css/heart.css">
+    </link>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    </link>
+    <link rel="stylesheet" type="text/css" href="./css/pixalized.css">
+    </link>
+    <!-- <link rel="stylesheet" type="text/css" href="./css/secret.css">
+    </link> -->
+
+    <link rel="stylesheet" type="text/css" href="./css/settings.css">
+    </link>
+
+    <script src="./js/carousel.js" defer></script>
+    <script src="./js/header.js" defer></script>
+    <script src="./js/heart.js" defer></script>
+    <script src="./js/settings.js" async></script>
+    <script src="./js/pixalized.js" defer></script>
+</head>
+
+<body>
+    <div class="background-container"></div>
+
+    <audio id="backgroundAudio" loop autoplay style="display: none;">
+        <source src="music/save_your_tears.mp3" type="audio/mp3">
+    </audio>
+
+    <div id="header-placeholder"></div>
+
+    <div class="main_content">
+
+        <div class="website_top_container">
+            <div class="website_top_txt">Bienvenue Loulou</div>
+            <div class="website_top_txt second">Joyeux 20 ans !</div>
+        </div>
+
+        <div class="heart-container">
+            <div id="main-heart">❤️</div>
+        </div>
+
+        <div class="carousel fade">
+            <div class="carousel_images">
+                <img src="./images/carousel/car-1.jpg" alt="image1">
+                <img src="./images/carousel/car-2.jpg" alt="image2">
+                <img src="./images/carousel/car-3.jpg" alt="image3">
+                <!-- <img src="images/img-4.png" alt="image4">
+        <img src="images/img-5.png" alt="image5">
+        <img src="images/img-6.png" alt="image6">
+        <img src="images/img-7.png" alt="image7">
+        <img src="images/img-8.png" alt="image8">
+        <img src="images/img-9.png" alt="image9">
+        <img src="images/img-10.png" alt="image10"> -->
+            </div>
+
+            <button id="previous" class="change_img_btn" onclick="changeImage(1)">&#10094;</button>
+            <button id="next" class="change_img_btn" onclick="changeImage(-1)">&#10095;</button>
+
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="pixalized_game_container">
+            <img id="pixalized_image" alt="Pixelated Image">
+            <form class="pixalized_form">
+                <input type="text" id="pixalized_input" placeholder="Écris un mot clé">
+                <button class="pixalized_submit" type="submit">
+                    <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                        <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                    </svg>
+                    <span>T'es sûr ?</span>
+                </button>
+            </form>
+        </div>
+
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <!-- <div class="secret_link_container" id="secret_link_container">
+        <a class="secret_link" href="#" onclick="openSecretPopup()">Clique ici</a>
+    </div>
+    <div id="secret_popup" class="popup">
+        <div class="popup-content">
+            <p class="test_txt">Hello</p>
+            <button class="close-btn" onclick="closeSecretPopup()">X</button>
+        </div>
+    </div>
+    <script src="./js/secret.js" defer></script> -->
+    
+
+    <div id="footer"></div>
+    <script src="./js/footer.js" defer></script>
+
+</body>
+
+</html>

@@ -18,9 +18,8 @@ const locations = [
 ];
 
 const locationImages = {
-  Paris: "../images/popup-images/popup-1.png",
-  Venise: "../images/img-3.png",
-  Canada: "../images/img-2.png",
+  Paris: "./map-popup/popup-1.png",
+  Venise: "./map-popup/popup-2.png",
 };
 
 locations.forEach((location) => {
